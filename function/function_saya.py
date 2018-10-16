@@ -14,3 +14,12 @@ def nilai_huruf(x) :
         return "D"
     else :
         return "E"
+
+def rata_rata(daftar_nilai) :
+    total = 0
+    for nilai in daftar_nilai :
+        total = total + nilai
+    
+    print("Total nilai : "+ str(total))
+    print("Jumlah data : "+ str(len(daftar_nilai)))
+    return float(total) / float(len(daftar_nilai))
